@@ -10,6 +10,7 @@
 		37AF116B2851A122008290F3 /* UserFetchingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF116A2851A122008290F3 /* UserFetchingClient.swift */; };
 		37AF116D2851A65C008290F3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF116C2851A65C008290F3 /* UserData.swift */; };
 		37AF116F2851A860008290F3 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF116E2851A860008290F3 /* UsersView.swift */; };
+		37AF11712857438E008290F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF11702857438E008290F3 /* User.swift */; };
 		37FE718728493E240062C713 /* Random_UsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE718628493E240062C713 /* Random_UsersApp.swift */; };
 		37FE718B28493E270062C713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FE718A28493E270062C713 /* Assets.xcassets */; };
 		37FE718E28493E270062C713 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FE718D28493E270062C713 /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		37AF116A2851A122008290F3 /* UserFetchingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetchingClient.swift; sourceTree = "<group>"; };
 		37AF116C2851A65C008290F3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		37AF116E2851A860008290F3 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		37AF11702857438E008290F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		37FE718328493E240062C713 /* Random Users.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random Users.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FE718628493E240062C713 /* Random_UsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_UsersApp.swift; sourceTree = "<group>"; };
 		37FE718A28493E270062C713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +38,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37AF1172285743AA008290F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37AF116A2851A122008290F3 /* UserFetchingClient.swift */,
+				37AF11702857438E008290F3 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37AF1173285743B4008290F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37AF116E2851A860008290F3 /* UsersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37AF1174285743BB008290F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				37AF116C2851A65C008290F3 /* UserData.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		37FE717A28493E240062C713 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +82,10 @@
 		37FE718528493E240062C713 /* Random Users */ = {
 			isa = PBXGroup;
 			children = (
+				37AF1174285743BB008290F3 /* ViewModel */,
+				37AF1173285743B4008290F3 /* View */,
+				37AF1172285743AA008290F3 /* Model */,
 				37FE718628493E240062C713 /* Random_UsersApp.swift */,
-				37AF116E2851A860008290F3 /* UsersView.swift */,
-				37AF116A2851A122008290F3 /* UserFetchingClient.swift */,
-				37AF116C2851A65C008290F3 /* UserData.swift */,
 				37FE718A28493E270062C713 /* Assets.xcassets */,
 				37FE718C28493E270062C713 /* Preview Content */,
 			);
@@ -146,6 +173,7 @@
 				37AF116F2851A860008290F3 /* UsersView.swift in Sources */,
 				37FE718728493E240062C713 /* Random_UsersApp.swift in Sources */,
 				37AF116D2851A65C008290F3 /* UserData.swift in Sources */,
+				37AF11712857438E008290F3 /* User.swift in Sources */,
 				37AF116B2851A122008290F3 /* UserFetchingClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
