@@ -11,16 +11,32 @@
 		37AF116D2851A65C008290F3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF116C2851A65C008290F3 /* UserData.swift */; };
 		37AF116F2851A860008290F3 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF116E2851A860008290F3 /* UsersView.swift */; };
 		37AF11712857438E008290F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF11702857438E008290F3 /* User.swift */; };
+		37E00AEB285B923200EF78C4 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = 37E00AEA285B923200EF78C4 /* randomUsers.json */; };
+		37E00AF3285B927700EF78C4 /* Random_UsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E00AF2285B927700EF78C4 /* Random_UsersTests.swift */; };
+		37E00AFA285CE47F00EF78C4 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = 37E00AEA285B923200EF78C4 /* randomUsers.json */; };
 		37FE718728493E240062C713 /* Random_UsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE718628493E240062C713 /* Random_UsersApp.swift */; };
 		37FE718B28493E270062C713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FE718A28493E270062C713 /* Assets.xcassets */; };
 		37FE718E28493E270062C713 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FE718D28493E270062C713 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37E00AF4285B927700EF78C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37FE717B28493E240062C713 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37FE718228493E240062C713;
+			remoteInfo = "Random Users";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		37AF116A2851A122008290F3 /* UserFetchingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetchingClient.swift; sourceTree = "<group>"; };
 		37AF116C2851A65C008290F3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		37AF116E2851A860008290F3 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		37AF11702857438E008290F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		37E00AEA285B923200EF78C4 /* randomUsers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
+		37E00AF0285B927700EF78C4 /* Random UsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Random UsersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E00AF2285B927700EF78C4 /* Random_UsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_UsersTests.swift; sourceTree = "<group>"; };
 		37FE718328493E240062C713 /* Random Users.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random Users.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FE718628493E240062C713 /* Random_UsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_UsersApp.swift; sourceTree = "<group>"; };
 		37FE718A28493E270062C713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		37E00AED285B927700EF78C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37FE718028493E240062C713 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,10 +86,20 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		37E00AF1285B927700EF78C4 /* Random UsersTests */ = {
+			isa = PBXGroup;
+			children = (
+				37E00AF2285B927700EF78C4 /* Random_UsersTests.swift */,
+			);
+			path = "Random UsersTests";
+			sourceTree = "<group>";
+		};
 		37FE717A28493E240062C713 = {
 			isa = PBXGroup;
 			children = (
+				37E00AEA285B923200EF78C4 /* randomUsers.json */,
 				37FE718528493E240062C713 /* Random Users */,
+				37E00AF1285B927700EF78C4 /* Random UsersTests */,
 				37FE718428493E240062C713 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				37FE718328493E240062C713 /* Random Users.app */,
+				37E00AF0285B927700EF78C4 /* Random UsersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +137,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		37E00AEF285B927700EF78C4 /* Random UsersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E00AF6285B927700EF78C4 /* Build configuration list for PBXNativeTarget "Random UsersTests" */;
+			buildPhases = (
+				37E00AEC285B927700EF78C4 /* Sources */,
+				37E00AED285B927700EF78C4 /* Frameworks */,
+				37E00AEE285B927700EF78C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37E00AF5285B927700EF78C4 /* PBXTargetDependency */,
+			);
+			name = "Random UsersTests";
+			productName = "Random UsersTests";
+			productReference = 37E00AF0285B927700EF78C4 /* Random UsersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		37FE718228493E240062C713 /* Random Users */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37FE719128493E270062C713 /* Build configuration list for PBXNativeTarget "Random Users" */;
@@ -130,6 +182,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					37E00AEF285B927700EF78C4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 37FE718228493E240062C713;
+					};
 					37FE718228493E240062C713 = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -149,23 +205,41 @@
 			projectRoot = "";
 			targets = (
 				37FE718228493E240062C713 /* Random Users */,
+				37E00AEF285B927700EF78C4 /* Random UsersTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		37E00AEE285B927700EF78C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E00AFA285CE47F00EF78C4 /* randomUsers.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37FE718128493E240062C713 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				37FE718E28493E270062C713 /* Preview Assets.xcassets in Resources */,
 				37FE718B28493E270062C713 /* Assets.xcassets in Resources */,
+				37E00AEB285B923200EF78C4 /* randomUsers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		37E00AEC285B927700EF78C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E00AF3285B927700EF78C4 /* Random_UsersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37FE717F28493E240062C713 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,7 +254,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		37E00AF5285B927700EF78C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37FE718228493E240062C713 /* Random Users */;
+			targetProxy = 37E00AF4285B927700EF78C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		37E00AF7285B927700EF78C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saramutina.Random-UsersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Random Users.app/Random Users";
+			};
+			name = Debug;
+		};
+		37E00AF8285B927700EF78C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saramutina.Random-UsersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Random Users.app/Random Users";
+			};
+			name = Release;
+		};
 		37FE718F28493E270062C713 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,6 +472,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		37E00AF6285B927700EF78C4 /* Build configuration list for PBXNativeTarget "Random UsersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E00AF7285B927700EF78C4 /* Debug */,
+				37E00AF8285B927700EF78C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		37FE717E28493E240062C713 /* Build configuration list for PBXProject "Random Users" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
